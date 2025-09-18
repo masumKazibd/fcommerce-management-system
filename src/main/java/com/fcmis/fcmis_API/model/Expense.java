@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Expense {
-    private enum Type{Advertising, Delivery, OTHER};
+    public enum Type{Advertising, Delivery, OTHER};
     private long id;
     private Type type;
     private LocalDate date;

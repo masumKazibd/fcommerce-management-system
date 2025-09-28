@@ -15,6 +15,6 @@ public class Product {
     private  String name;
     private BigDecimal buyPrice;
     private BigDecimal sellPrice;
-    private Integer quantity;
+    private Integer stockQuantity;
 
 }

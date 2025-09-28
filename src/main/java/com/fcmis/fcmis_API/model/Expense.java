@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Expense {
     public enum Type{Advertising, Delivery, OTHER};
     private long id;

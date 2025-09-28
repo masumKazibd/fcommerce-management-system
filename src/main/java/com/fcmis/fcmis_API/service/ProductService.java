@@ -21,7 +21,7 @@ public class ProductService {
                 .name(dto.getName().trim())
                 .buyPrice(dto.getBuyPrice())
                 .sellPrice(dto.getSellPrice())
-                .quantity(dto.getQuantity())
+                .stockQuantity(dto.getQuantity())
                 .build();
         return productRepository.save(p);
     }
@@ -36,7 +36,7 @@ public class ProductService {
         p.setName(dto.getName().trim());
         p.setBuyPrice(dto.getBuyPrice());
         p.setSellPrice(dto.getSellPrice());
-        p.setQuantity(dto.getQuantity());
+        p.setStockQuantity(dto.getQuantity());
         return productRepository.save(p);
     }
 

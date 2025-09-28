@@ -1,18 +1,15 @@
 package com.fcmis.fcmis_API.DTOs;
 
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.*;
 import java.math.BigDecimal;
 
-@Getter @Setter
+@Getter @Setter @Builder
 public class SummaryResponse {
-    private BigDecimal grosRevenue;
-    private BigDecimal totalCOGs;
+    private BigDecimal grossRevenue;
+    private BigDecimal totalCOGS;
     private BigDecimal totalExpenses;
     private BigDecimal netProfit;
-    private Integer totalStocksQuantity;
-    private Integer totalStocksValue;
-
-
+    private Integer totalStockQty;
+    private BigDecimal stockValue;
 }
+

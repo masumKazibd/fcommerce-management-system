@@ -1,16 +1,16 @@
 package com.fcmis.fcmis_API.DTOs;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.validation.constraints.*;
+import lombok.*;
 
-import java.math.BigDecimal;
+import java.math.*;
 import java.time.LocalDate;
 
 @Getter @Setter
 public class CreateSaleRequest {
-    private long productId;
-    private  Integer quantity;
-    private LocalDate date;
-    private BigDecimal sellPrice;
-
+    @NotNull private Long productId;
+    @NotNull
+    @Min(1) private Integer quantity;
+    @NotNull private LocalDate date;
+    private BigDecimal unitSellPrice;
 }

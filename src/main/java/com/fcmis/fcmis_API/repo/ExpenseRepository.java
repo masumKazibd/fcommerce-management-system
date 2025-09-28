@@ -1,6 +1,5 @@
 package com.fcmis.fcmis_API.repo;
-
-import com.fcmis.fcmis_API.model.Expense;
+import com.fcmis.fcmis_API.domain.Expense;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

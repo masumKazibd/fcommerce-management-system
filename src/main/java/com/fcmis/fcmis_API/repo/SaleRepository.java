@@ -1,6 +1,6 @@
 package com.fcmis.fcmis_API.repo;
 
-import com.fcmis.fcmis_API.model.Sale;
+import com.fcmis.fcmis_API.domain.Sale;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

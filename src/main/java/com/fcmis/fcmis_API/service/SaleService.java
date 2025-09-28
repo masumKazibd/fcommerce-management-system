@@ -30,7 +30,6 @@ public class SaleService {
         BigDecimal unitBuy = product.getBuyPrice();
         BigDecimal cogs = unitBuy.multiply(BigDecimal.valueOf(req.getQuantity()));
 
-        // স্টক কমাও
         product.setStockQty(product.getStockQty() - req.getQuantity());
         productRepo.save(product);
 

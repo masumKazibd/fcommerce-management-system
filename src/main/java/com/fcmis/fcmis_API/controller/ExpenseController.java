@@ -25,5 +25,5 @@ public class ExpenseController {
     }
 
     @GetMapping
-    public List<Expense> list() { return expenseRepo.findAll(); }
+    public List<Expense> getAllExpenses() { return expenseRepo.findAll(); }
 }

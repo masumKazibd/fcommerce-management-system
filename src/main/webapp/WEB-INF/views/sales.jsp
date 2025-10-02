@@ -22,9 +22,7 @@
 <script>
     const productSel = document.getElementById('productId');
     fetch('/api/products').then(r=>r.json()).then(list=>{
-        productSel.innerHTML = list.map(p=>`<option value="${p.id}">${p.name} (stock ${p.stockQty})</option>`).join('');
-    });
-
+        productSel.innerHTML = list.map(p=>`<option value="\${p.id}">\${p.name} (stock \${p.stockQty})</option>`).join('');    });
     document.getElementById('saleForm').addEventListener('submit', async (e)=>{
         e.preventDefault();
         const fd = new FormData(e.target);

@@ -1,5 +1,6 @@
 package com.fcmis.fcmis_API.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,6 +13,7 @@ public class Sale {
     private Long id;
 
     @ManyToOne(optional=false, fetch=FetchType.LAZY)
+    @JsonIgnore
     private Product product;
 
     @Column(nullable=false)

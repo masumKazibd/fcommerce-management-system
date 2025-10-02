@@ -1,0 +1,14 @@
+<%@ taglib prefix="c" uri="https://jakarta.ee/taglibs/standard-1.2" %>
+
+<div class="p-4 border-b bg-white">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+        <a href="/dashboard" class="text-xl font-bold">FCommerce</a>
+        <nav class="space-x-4">
+            <a href="../../../../../webapp/WEB-INF">Dashboard</a>
+            <a href="/products">Products</a>
+            <a href="/sales">Sales</a>
+            <a href="/expenses">Expenses</a>
+            <a href="/h2" target="_blank">H2</a>
+        </nav>
+    </div>
+</div>'

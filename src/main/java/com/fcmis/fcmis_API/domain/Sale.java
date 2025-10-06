@@ -1,6 +1,7 @@
 package com.fcmis.fcmis_API.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -33,4 +34,11 @@ public class Sale {
 
     @Column(nullable=false, precision=12, scale=2)
     private BigDecimal cogsAmount;
+
+    @JsonProperty("productId")
+    @Transient
+    public Long getProductId() {
+        return this.product != null ? this.product.getId() : null;
+    }
+
 }
